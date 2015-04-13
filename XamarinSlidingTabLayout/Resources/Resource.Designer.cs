@@ -45,10 +45,16 @@ namespace XamarinSlidingTabLayout
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int Icon = 2130837504;
+			public const int ic_action_overflow = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int monoandroidsplash = 2130837505;
+			public const int Icon = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int monoandroidsplash = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int xs = 2130837507;
 			
 			static Drawable()
 			{
@@ -63,8 +69,26 @@ namespace XamarinSlidingTabLayout
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int MyButton = 2131099648;
+			// aapt resource value: 0x7f070004
+			public const int item_subtitle = 2131165188;
+			
+			// aapt resource value: 0x7f070005
+			public const int item_title = 2131165189;
+			
+			// aapt resource value: 0x7f070006
+			public const int menu = 2131165190;
+			
+			// aapt resource value: 0x7f070003
+			public const int sample_content_fragment = 2131165187;
+			
+			// aapt resource value: 0x7f070002
+			public const int sample_main_layout = 2131165186;
+			
+			// aapt resource value: 0x7f070000
+			public const int sliding_tabs = 2131165184;
+			
+			// aapt resource value: 0x7f070001
+			public const int viewpager = 2131165185;
 			
 			static Id()
 			{
@@ -80,7 +104,13 @@ namespace XamarinSlidingTabLayout
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int fragment_sample = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int pager_item = 2130903042;
 			
 			static Layout()
 			{
@@ -88,6 +118,22 @@ namespace XamarinSlidingTabLayout
 			}
 			
 			private Layout()
+			{
+			}
+		}
+		
+		public partial class Menu
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int actionbar_main = 2131099648;
+			
+			static Menu()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Menu()
 			{
 			}
 		}
@@ -100,6 +146,12 @@ namespace XamarinSlidingTabLayout
 			
 			// aapt resource value: 0x7f040000
 			public const int Hello = 2130968576;
+			
+			// aapt resource value: 0x7f040003
+			public const int sample_hide_log = 2130968579;
+			
+			// aapt resource value: 0x7f040002
+			public const int sample_show_log = 2130968578;
 			
 			static String()
 			{
@@ -114,8 +166,14 @@ namespace XamarinSlidingTabLayout
 		public partial class Style
 		{
 			
+			// aapt resource value: 0x7f050001
+			public const int CustomActionBarTheme = 2131034113;
+			
 			// aapt resource value: 0x7f050000
 			public const int Mono_Android_Theme_Splash = 2131034112;
+			
+			// aapt resource value: 0x7f050002
+			public const int MyActionBar = 2131034114;
 			
 			static Style()
 			{

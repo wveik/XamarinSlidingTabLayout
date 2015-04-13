@@ -9,20 +9,26 @@ using Android.OS;
 namespace XamarinSlidingTabLayout {
     [Activity(Label = "XamarinSlidingTabLayout", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity {
-        int count = 1;
-
         protected override void OnCreate(Bundle bundle) {
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
+            FragmentTransaction transaction = FragmentManager.BeginTransaction();
+            SlidingTabsFragment fragment = new SlidingTabsFragment();
+            transaction.Replace(Resource.Id.sample_content_fragment, fragment);
+            transaction.Commit();
 
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
         }
+
+        public override bool OnCreateOptionsMenu(IMenu menu) {
+            MenuInflater.Inflate(Resource.Menu.actionbar_main, menu);
+            return base.OnCreateOptionsMenu(menu);
+        }
+
     }
 }
+
+
 
